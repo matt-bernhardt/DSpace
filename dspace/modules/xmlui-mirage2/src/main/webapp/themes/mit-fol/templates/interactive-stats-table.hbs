@@ -1,0 +1,60 @@
+<div id="interactive-stats-{{category}}_div_tableContainer" class="ds-static-div ">
+    <table id="interactive-stats-{{category}}_table_statable" class="ds-table table table-striped table-hover">
+        <tbody>
+        <tr class="ds-table-header-row">
+            {{#each headers}}
+                <th class="ds-table-header-cell {{#if sortable}}sortable {{#if
+                        sorted}}sort_by{{/if}}{{/if}} {{data_cell_class}}"
+                    data-name="{{name}}">
+                    <span class="header-text">{{{I18nIs name}}}</span>
+                    {{#if sortable}}
+                        <span class="sorticon fa fa-sort-desc">&nbsp;</span>
+                    {{/if}}
+                </th>
+            {{/each}}
+        </tr>
+
+        {{#each rows}}
+            <tr class="ds-table-row">
+                {{#each cells}}
+                    <td class="ds-table-cell {{data_cell_class}}">
+                        {{#if url}}
+                            <a href="{{url}}">{{content}}</a>
+                        {{else}}
+                            <span>{{format_mp_number content}}</span>
+                        {{/if}}
+                    </td>
+                {{/each}}
+            </tr>
+        {{/each}}
+        </tbody>
+    </table>
+
+    {{#each totals}}
+        <p id="interactive-stats-{{../category}}_total_{{@key}}" class="ds-paragraph total_row" style="display: block;">{{label}}<br>
+            <span>{{format_mp_number total}}</span>
+        </p>
+    {{/each}}
+
+    {{#if total_downloads}}
+        <div id="interactive-stats-{{category}}_div_total-row-0" class="ds-static-div total_row"
+             style="display: block;">
+            <p id="interactive-stats-{{category}}_p_header"
+               class="ds-paragraph header">{{{I18nIs 'mit.most-popular.total-downloads'}}}</p>
+            <p id="interactive-stats-{{category}}_p_value"
+               class="ds-paragraph value">{{format_mp_number
+                    total_downloads}}</p>
+        </div>
+    {{/if}}
+
+    {{#if total_views}}
+        <div id="interactive-stats-{{category}}_div_total-row-1" class="ds-static-div total_row"
+             style="display: block;">
+            <p id="interactive-stats-{{category}}_p_header"
+               class="ds-paragraph header">{{{I18nIs 'mit.most-popular.total-views'}}}</p>
+            <p id="interactive-stats-{{category}}_p_value"
+               class="ds-paragraph value">{{format_mp_number
+                    total_views}}</p>
+        </div>
+    {{/if}}
+</div>
