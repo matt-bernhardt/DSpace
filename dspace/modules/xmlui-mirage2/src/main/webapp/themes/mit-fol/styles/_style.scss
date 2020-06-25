@@ -1,0 +1,228 @@
+/**
+ * The contents of this file are subject to the license and copyright
+ * detailed in the LICENSE and NOTICE files at the root of the source
+ * tree and available online at
+ *
+ * http://www.dspace.org/license/
+ */
+@import "external-import";
+
+
+
+/**
+ * You can put your own style in this file.
+ * It will be included in all color schemes
+ */
+//Remove this import if your theme already uses font awesome,
+//and imports it elsewhere
+$fa-font-path: "../node_modules/font-awesome/fonts";
+@import "../node_modules/font-awesome/scss/font-awesome";
+
+/* @import "atmire-cua"; */
+@import "most-popular-maps";
+
+.publication-records-modal, .publication-records-modal ul {
+    list-style-type: none;
+    padding-left: 0px;
+}
+
+.publication-records-import-btn {
+    margin: 5px 0px 15px 0px;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.imported {
+    background-color: #E2E2E2;
+}
+
+#aspect_submission_StepTransformer_div_StartSubmissionLookupStep {
+
+    #aspect_submission_StepTransformer_field_search {
+        width: 81%;
+        display: inline;
+    }
+
+    #aspect_submission_StepTransformer_field_lookup {
+        width: 19%
+    }
+
+    .modal .modal-body {
+        max-height: 500px;
+        overflow-y: auto;
+    }
+
+    #aspect_submission_StepTransformer_item_publication-title {
+        margin-bottom: 5px;
+    }
+}
+
+.heading2 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.unstyled-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.heading2 {
+    font-size: 24px;
+    font-weight: 300;
+}
+
+.workflow-checkbox {
+    float: left;
+    margin-right: 10px;
+    margin-top: 2%;
+}
+
+ul.workflow-selection {
+    margin-top: 10px;
+    list-style: none;
+    padding-left: 5px;
+}
+
+#aspect_submission_StepTransformer_list_submit-upload-new, #aspect_submission_StepTransformer_list_submit-edit-file {
+    h4.ds-head {
+        display: inline-block;
+        max-width: 100%;
+        margin-bottom: 5px;
+        font-weight: bold;
+        font-size: inherit;
+    }
+    .license-content-list {
+        list-style: none;
+        padding: 0;
+    }
+}
+
+div.bitstream-license {
+    margin-bottom: $grid-gutter-width/2;
+}
+
+.valueOverview {
+    padding: 10px;
+    margin-left: 10px;
+}
+
+.bg-neutral {
+    background-color: lightgray;
+}
+
+.valueUpdateOverview {
+    margin-left: 5%;
+}
+
+div.fieldUpdate ul {
+    list-style: none;
+}
+
+.initial-display {
+    display: initial;
+}
+
+.nav-logo {
+    margin: 0;
+}
+
+.wrap-content {
+    padding-top: 0;
+    .starter {
+        height: 3rem;
+        .navbar-toggle {
+            margin: 0;
+            padding: 9px 0px;
+        }
+    }
+}
+
+.MIT-logo {
+    border-right: 1px white solid;
+    padding-right: 15px;
+    margin-right: 15px;
+}
+
+.dspace-text {
+    font-weight: normal;
+    font-size: 28px;
+    &:hover, &:focus {
+        text-decoration: none;
+    }
+}
+
+hr.collection-separator {
+    border-color: $gray-l2;
+}
+
+.smaller-font {
+    h5 {
+        font-size: 12.5px;
+    }
+    font-size: 0.9em;
+}
+
+.download-button {
+    width: 100%;
+}
+.download-button:hover, .download-button:active, .download-button:focus {
+    background-color: $blue
+}
+
+.dspace-home-header {
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+#home-search-form {
+    margin-top: $grid-gutter-width *2;
+    margin-bottom: $grid-gutter-width *2;
+    .input-group {
+        padding: 5px 0;
+    }
+}
+
+#collections-list {
+    div.col-sm-4 {
+        margin-bottom: $grid-gutter-width/2;
+    }
+    margin-bottom: $grid-gutter-width *2;
+}
+
+#research_news .title {
+    font-weight: bold;
+}
+
+.view_all_collections {
+    color: black;
+    text-decoration: underline;
+    font-weight: bold;
+
+}
+
+.list-and-text-field {
+  input {
+    margin-left: 20px;
+  }
+  label {
+    font-weight: bold;
+  }
+}
+
+.oastats-box {
+    border: 1px solid #aaa;
+    margin-top: $grid-gutter-width/2;
+    margin-bottom: $grid-gutter-width/2;
+    padding: 15px;
+}
+
+#mit-item-dissemination {
+    margin-top: 5px;
+}
+
+#aspect_statistics_StatletTransformer_div_statswrapper .panel-body {
+    padding: 0;
+}
